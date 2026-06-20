@@ -36,8 +36,8 @@
             </div>
 
             <div class="search-container">
-                <input type="text" placeholder="Buscar ">
-                <button>Buscar</button>
+                <input type="text" id="buscar" placeholder="Buscar en la página">
+                <button onclick="buscarContenido()">Buscar</button>
             </div>
 
             <div class="phone">
@@ -407,6 +407,45 @@ document.querySelectorAll('.subsubmenu-btn').forEach(btn => {
 
 });
 
+</script>
+    
+<!--Boton de busqueda-->
+<script>
+function buscarContenido() {
+    let texto = document.getElementById("buscar").value.toLowerCase().trim();
+
+    if (texto === "") return;
+
+    let elementos = document.querySelectorAll(
+        "h1, h2, h3, h4, h5, h6, p, span, li, a"
+    );
+
+    // Quitar resaltados anteriores
+    elementos.forEach(el => {
+        el.classList.remove("resultado-busqueda");
+    });
+
+    let encontrado = false;
+
+    elementos.forEach(el => {
+        if (!encontrado &&
+            el.textContent.toLowerCase().includes(texto)) {
+
+            el.classList.add("resultado-busqueda");
+
+            el.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+            encontrado = true;
+        }
+    });
+
+    if (!encontrado) {
+        alert("No se encontraron resultados.");
+    }
+}
 </script>
 </body>
 </html>
