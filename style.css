@@ -63,6 +63,13 @@ body{
     width:35%;
 }
 
+.resultado-busqueda{
+    background-color: yellow !important;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+
 .search-container input{
     flex:1;
     padding:12px;
