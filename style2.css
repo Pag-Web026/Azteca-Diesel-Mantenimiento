@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* HEADER */
+
+.top-bar{
+    background:#121212;
+    border-bottom:4px solid #C62828;
+    padding:20px;
+    text-align:center;
+}
+
+.logo{
+    color:#C9A227;
+    font-size:32px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* HERO */
+
+.hero{
+    height:350px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url("Imagenes/frenos-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    color:#C9A227;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+}
+
+/* SECCIÓN */
+
+.categories{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.categories h2{
+    text-align:center;
+    color:#C62828;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* TARJETAS */
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.card{
+    background:white;
+
+    display:flex;
+    align-items:center;
+
+    padding:25px;
+
+    border-left:8px solid #C62828;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateX(10px);
+    border-left-color:#1B5E20;
+}
+
+.card h3{
+    color:#C62828;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#444;
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background:#121212;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero{
+        height:250px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+}

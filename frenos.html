@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Frenos | Azteca Diesel MX</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:#C62828;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:white;
+}
+
+.btn-inicio{
+    text-decoration:none;
+    color:white;
+    border:2px solid white;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn-inicio:hover{
+    background:white;
+    color:#C62828;
+}
+
+/* SECCION PRINCIPAL */
+
+.servicio{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:600px;
+}
+
+.imagen{
+    overflow:hidden;
+}
+
+.imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.info{
+    padding:70px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:#1b1b1b;
+}
+
+.info h1{
+    color:#C9A227;
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
+.info p{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.btn-cotizar{
+    display:inline-block;
+    width:220px;
+    text-align:center;
+    background:#C62828;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:5px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-cotizar:hover{
+    background:#1B5E20;
+}
+
+/* SERVICIOS */
+
+.servicios{
+    padding:80px 10%;
+    background:#151515;
+}
+
+.servicios h2{
+    text-align:center;
+    color:#C9A227;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    padding:30px;
+    border-radius:10px;
+    border-left:5px solid #C62828;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-left:5px solid #1B5E20;
+}
+
+.card h3{
+    color:#C9A227;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+/* PROCESO */
+
+.proceso{
+    padding:80px 10%;
+    background:#0d0d0d;
+}
+
+.proceso h2{
+    text-align:center;
+    color:#C9A227;
+    margin-bottom:50px;
+}
+
+.paso{
+    background:#222;
+    margin-bottom:20px;
+    padding:25px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.numero{ /* Circulos del listado  */
+    width:50px;
+    height:50px;
+    background:#28c628;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    background:#C62828; /*Baner de contacto*/
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contacto h2{
+    margin-bottom:20px;
+}
+
+.contacto p{
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+.contacto a{
+    text-decoration:none;
+    background:white; /*boton*/
+    color:#C62828; /* Letra*/
+    padding:15px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:25px;
+    color:#999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .servicio{
+        grid-template-columns:1fr;
+    }
+
+    .info{
+        padding:40px;
+    }
+
+    .info h1{
+        font-size:2.2rem;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        AZTECA DIESEL MX
+    </div>
+
+    <a href="index.html" class="btn-inicio">
+        Volver al Inicio
+    </a>
+
+</header>
+
+<section class="servicio">
+
+    <div class="imagen">
+        <img src="Imagenes/freno.jpeg" alt="Sistema de Frenos">
+    </div>
+
+    <div class="info">
+
+        <h1>Frenos </h1>
+
+        <p>
+            Ofrecemos mantenimiento preventivo y correctivo para sistemas
+            de frenos en tractocamiones de unidades diésel. Nuestro equipo
+            especializado garantiza seguridad, eficiencia y confiabilidad
+            en cada servicio.<br> <br>
+            ✅Limpieza de frenos en general<br>
+            ✅Ajuste de frenos     <br>
+            ✅Mantenimiento a matracas de frenos. <br>
+            ✅Revisión de vida útil de Balatas<br>
+            ✅Revisión de vida útil de tambor<br>
+            ✅Revisión de vida útil en disco de freno y Caliper <br><br>
+            ☑️Incluye valoración de fugas en sistema de rotochambers en caso de aplicar y/o en líneas de frenos hidráulicos.
+
+        </p>
+    </div>
+
+</section>
+
+<section class="servicios">
+
+    <h2>Servicios Disponibles</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Cambio de Balatas</h3>
+            <p>
+                Sustitución profesional de balatas para mantener
+                un frenado seguro y eficiente.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ajuste de Frenos</h3>
+            <p>
+                Calibración completa del sistema para mejorar
+                el desempeño de la unidad.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Diagnóstico ABS</h3>
+            <p>
+                Revisión electrónica y detección de fallas
+                en sensores y módulos ABS.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="proceso">
+
+    <h2>¿Cómo Trabajamos?</h2>
+
+    <div class="paso">
+        <div class="numero">1</div>
+        <div>Inspección completa del sistema de frenos.</div>
+    </div>
+
+    <div class="paso">
+        <div class="numero">2</div>
+        <div>Diagnóstico de componentes y detección de fallas.</div>
+    </div>
+
+    <div class="paso">
+        <div class="numero">3</div>
+        <div>Reparación o reemplazo de piezas dañadas.</div>
+    </div>
+
+    <div class="paso">
+        <div class="numero">4</div>
+        <div>Pruebas finales para garantizar la seguridad.</div>
+    </div>
+
+</section>
+<!--
+<section class="contacto">
+
+    <h2>¿Necesitas ayuda con tu unidad?</h2>
+
+    <p>
+        Contáctanos y recibe atención especializada para tu tractocamión.
+    </p>
+
+    <a href="#">
+        Solicitar Servicio
+    </a>
+
+</section>
+-->
+<footer>
+    © 2026 Azteca Diesel MX | Especialistas en Tractocamiones Diésel
+</footer>
+
+</body>
+</html>
