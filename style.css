@@ -100,6 +100,7 @@ body{
     font-family: 'Google Sans Flex', sans-serif;
     font-size:18px;
 }
+
 .btn-facebook{
     background-color: #1877F2;
     color: white;
@@ -118,7 +119,6 @@ body{
     justify-content: center;
     margin-top: 20px;
 }
-
 /* MENÚ */
 
 .menu{
