@@ -81,7 +81,7 @@ body{
 .search-container button{
     padding:12px 20px;
     border:none;
-    background:#28c64d;
+    background:#c62828;
     color:white;
     cursor:pointer;
     font-weight:bold;
@@ -90,7 +90,7 @@ body{
 }
 
 .search-container button:hover{
-    background:#1B5E20;
+    background:#5e1b1b;
 }
 
 .phone{
