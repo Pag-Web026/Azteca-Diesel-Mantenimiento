@@ -69,7 +69,6 @@ body{
     border-radius: 3px;
 }
 
-
 .search-container input{
     flex:1;
     padding:12px;
@@ -102,16 +101,29 @@ body{
 }
 
 .btn-facebook{
-    background-color: #1877F2;
+    display: block;
+    background: #1877F2;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
     font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: 0.3s ease;
 }
 
 .btn-facebook:hover{
-    background-color: #166FE5;
+    background: #166FE5;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(24,119,242,.4);
+}
+
+.btn-facebook i{
+    margin-right: 10px;
+    font-size: 24px;
 }
 
 .redes-sociales{
@@ -119,6 +131,7 @@ body{
     justify-content: center;
     margin-top: 20px;
 }
+
 /* MENÚ */
 
 .menu{
@@ -393,8 +406,8 @@ footer{
 /* NUEVA SECCIÓN */
 
 .info-section{
-    padding: 60px 8%;
-    background: #f4f4f4;
+    padding:70px 8%;
+    background:linear-gradient(180deg,#fcf7f7,#efe8e8,#fdf7f7);
 }
 
 .info-grid{
@@ -404,33 +417,104 @@ footer{
 }
 
 .info-card{
-    background: #fff;
-    border-radius: 15px;
-    padding: 30px;
-    min-height: 320px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+
+    background:#1b1b1b;
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    min-height:450px;
+
+    border:1px solid #2f2f2f;
+
+    box-shadow:0 15px 35px rgba(30, 30, 30, 0.647);
+
+    transition:.35s;
+}
+
+.info-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C9A227;
+
 }
 
 .info-card h2{
-    color: #003366;
-    margin-bottom: 20px;
-    font-weight: bold;
+
+    color:#C9A227;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+.info-card h2::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:#C62828;
+
+    display:block;
+
+    margin-top:12px;
+
 }
 
 .info-card p{
-    font-size: 17px;
-    line-height: 1.7;
-}
 
+    color:#ddd;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
 .info-card ul{
-    padding-left: 20px;
+
+    list-style:none;
+
+    padding:0;
+
 }
 
 .info-card li{
-    font-size: 18px;
-    margin-bottom: 12px;
+
+    background:#262626;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border-left:5px solid #C62828;
+
+    transition:.3s;
+
 }
 
+.info-card li:hover{
+
+    border-left:5px solid #C9A227;
+
+    transform:translateX(10px);
+
+}
 .image-card{
     padding: 0;
     overflow: hidden;
@@ -449,106 +533,6 @@ footer{
         grid-template-columns: 1fr;
     }
 
-}
-.sidebar-home{
-    width:350px;
-    flex-shrink:0;
-}
-
-.contacto-box,
-.servicios-box,
-.ventajas-box{
-    background: #fff;
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
-}
-
-.contacto-box h2,
-.servicios-box h2{
-    color: #002f6c;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.contacto-box p{
-    text-align: center;
-}
-
-.btn-whatsapp{
-    display: block;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.btn-whatsapp:hover{
-    background: #1ebd5a;
-    color: white;
-}
-
-.servicio24{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #002f6c;
-}
-
-.servicios-box ul{
-    list-style: none;
-    padding: 0;
-}
-
-.servicios-box li{
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.ventajas-box{
-    text-align: center;
-}
-
-.ventajas-box p{
-    font-size: 24px;
-    font-weight: bold;
-    color: #198754;
-    margin: 15px 0;
-}
-/* CONTENEDOR GENERAL */
-
-.main-content{
-    display:grid;
-    grid-template-columns: 1fr 350px;
-    gap:25px;
-    padding:30px;
-}
-
-.info-section{
-    width:100%;
-}
-
-.sidebar-home{
-    width:100%;
-}
-
-/* INFORMACIÓN */
-
-.info-section{
-    flex:3;
-}
-
-.info-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
 }
 
 /* BARRA LATERAL*/
