@@ -551,59 +551,352 @@ footer{
     gap:20px;
 }
 
-/* BARRA LATERAL */
+/* BARRA LATERAL*/
 
 .sidebar-home{
-    flex:1;
-    min-width:320px;
+    width:350px;
+    min-width:350px;
 }
 
-/* CAJAS */
+/*======================
+      CAJAS
+=======================*/
 
 .contacto-box,
 .servicios-box,
 .ventajas-box{
-    background:#fff;
-    border-radius:15px;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,.12);
+
+    background:linear-gradient(180deg,#181818,#0e0e0e);
+
+    color:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border:1px solid #303030;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    transition:.35s;
+
 }
+
+.contacto-box:hover,
+.servicios-box:hover,
+.ventajas-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#C62828;
+
+    box-shadow:0 20px 35px rgba(0,0,0,.45);
+
+}
+
+/*======================
+      TITULOS
+=======================*/
 
 .contacto-box h2,
 .servicios-box h2{
+
+    color:#F5C242;
+
     text-align:center;
-    color:#003366;
-    font-weight:bold;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
 }
 
 .contacto-box p{
+
     text-align:center;
+
+    color:#d9d9d9;
+
+    font-size:18px;
+
+    line-height:1.6;
+
 }
 
-/* BOTÓN WHATSAPP */
+/*======================
+    BOTÓN WHATSAPP
+=======================*/
 
 .btn-whatsapp{
-    display:block;
-    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:linear-gradient(90deg,#10b541,#2bdc61);
+
     color:white;
+
     text-decoration:none;
-    text-align:center;
-    padding:15px;
-    margin:20px 0;
-    border-radius:10px;
-    font-size:22px;
+
+    font-size:25px;
+
     font-weight:bold;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin:25px 0;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(37,211,102,.35);
+
 }
 
 .btn-whatsapp:hover{
+
+    background:#16a34a;
+
+    transform:scale(1.03);
+
     color:white;
+
 }
 
+.btn-whatsapp i{
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+/*======================
+     FACEBOOK
+=======================*/
+
+.redes-sociales{
+
+    margin-top:15px;
+
+}
+
+.redes-sociales a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#242424;
+
+    color:#3b82f6;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.redes-sociales a:hover{
+
+    background:#313131;
+
+}
+
+/*======================
+      SERVICIO
+=======================*/
+
 .servicio24{
+
+    margin-top:25px;
+
     text-align:center;
+
+    font-size:24px;
+
     font-weight:bold;
-    color:#003366;
+
+    color:#F5C242;
+
+}
+
+/*======================
+      SERVICIOS
+=======================*/
+
+.servicios-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.servicios-box li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#202020;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.servicios-box li:hover{
+
+    background:#2b2b2b;
+
+    border-left:5px solid #C62828;
+
+    transform:translateX(8px);
+
+}
+
+/*======================
+      VENTAJAS
+=======================*/
+
+.ventajas-box{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+.ventajas-box p{
+
+    margin:0;
+
+    background:#202020;
+
+    border-radius:12px;
+
+    border:1px solid #333;
+
+    padding:18px;
+
+    color:#F5C242;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.ventajas-box p:hover{
+
+    background:#2c2c2c;
+
+    transform:scale(1.03);
+
+}
+
+/*======================
+      CONTENEDOR
+=======================*/
+
+.main-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 350px;
+
+    gap:30px;
+
+    width:90%;
+
+    margin:40px auto;
+
+    align-items:start;
+
+}
+
+.info-section{
+
+    width:100%;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/*======================
+      RESPONSIVE
+=======================*/
+
+@media(max-width:992px){
+
+    .main-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar-home{
+
+        width:100%;
+
+        min-width:100%;
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
 
 /* LISTA */
