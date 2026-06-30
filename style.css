@@ -566,7 +566,7 @@ footer{
 
 .contacto-box,
 .servicios-box,
-.ventajas-box{
+.ventajas-box, .horarios-box{
 
     background:linear-gradient(180deg,#181818,#0e0e0e);
 
@@ -588,7 +588,7 @@ footer{
 
 .contacto-box:hover,
 .servicios-box:hover,
-.ventajas-box:hover{
+.ventajas-box:hover, .horarios-box:hover{
 
     transform:translateY(-8px);
 
@@ -603,7 +603,7 @@ footer{
 =======================*/
 
 .contacto-box h2,
-.servicios-box h2{
+.servicios-box h2, .horarios-box h2{
 
     color:#F5C242;
 
@@ -745,6 +745,7 @@ footer{
 
 }
 
+
 /*======================
       SERVICIOS
 =======================*/
@@ -784,6 +785,67 @@ footer{
 }
 
 .servicios-box li:hover{
+
+    background:#2b2b2b;
+
+    border-left:5px solid #C62828;
+
+    transform:translateX(8px);
+
+}
+/*======================
+      horarios
+=======================*/
+
+.horarios{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#F5C242;
+
+}
+
+.horarios-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.horarios-box li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#202020;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.horarios-box li:hover{
 
     background:#2b2b2b;
 
