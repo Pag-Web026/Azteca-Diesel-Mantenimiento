@@ -533,18 +533,17 @@ footer{
 
 }
 
-.image-card img{
-
-    width:auto;
-
-    max-width:100%;
-
-    height:auto;
-
-    display:block;
-
+.image-card{
+    padding:0;
+    overflow:hidden;
     border-radius:18px;
+}
 
+.image-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 @media(max-width:768px){
 
@@ -1062,4 +1061,35 @@ footer{
 }
 .subsubmenu.activo{
     display:block;
+}
+.marcas-texto{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.lista-marcas{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px 25px;
+    list-style:none;
+    padding:0;
+    margin-bottom:25px;
+}
+
+.lista-marcas li{
+    background:#262626;
+    color:#fff;
+    padding:12px 15px;
+    border-left:4px solid #C62828;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.lista-marcas li:hover{
+    background:#333;
+    border-left-color:#C9A227;
+    transform:translateX(5px);
 }
